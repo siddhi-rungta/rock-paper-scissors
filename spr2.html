@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rock Paper Scissors</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p class="title">Rock Paper Scissors</p>
+  <button onclick="
+  playGame('Rock');
+" class="move-button">
+  <img src="images/rock.png" class="move-icon">
+</button>
+  <button  onclick="
+   playGame('paper');
+  " class="move-button"><img src="images/paper.png" class="move-icon"></button>
+  <button  onclick="
+  playGame('scissors');
+  "class="move-button"><img src="images/scissors.png" class="move-icon"></button>
+  <p class="js-result result"></p>
+  <p class="js-moves">
+   
+  </p>
+  <p class="js-score score"></p>
+  <button class="reset-score-button"
+  onclick="resetscore()" >Reset score</button>
+   
+  <script src="srp.js">
+  </script>
+</body>
+</html>
