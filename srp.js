@@ -7,8 +7,8 @@ updateScoreElement();
 function playGame(playerMove){
   const computerMove =pickComputerMove();
    let result='';
-   if(playerMove ==='Rock'){
-   if(computerMove==='Rock'){
+   if(playerMove ==='rock'){
+   if(computerMove==='rock'){
    result='Tie';
    }
    else if(computerMove==='paper'){
@@ -19,7 +19,7 @@ function playGame(playerMove){
    }
     }
     else if (playerMove==='paper'){
-      if(computerMove==='Rock'){
+      if(computerMove==='rock'){
     result='You win';
       }
     else if(computerMove==='paper'){
@@ -30,7 +30,7 @@ function playGame(playerMove){
     }
     }
     else if(playerMove==='scissors'){
-      if(computerMove==='Rock'){
+      if(computerMove==='rock'){
       result='You lose';
       }
     else if(computerMove==='paper'){
@@ -66,7 +66,7 @@ function pickComputerMove(){
    const randomNumber= Math.random();
    
   if(randomNumber>=0 && randomNumber<1/3){
-      computerMove='Rock';
+      computerMove='rock';
     }
   else if(randomNumber>=1/3 && randomNumber<2/3){
       computerMove='paper';
